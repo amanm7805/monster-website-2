@@ -1,6 +1,6 @@
 // Configuration and Globals
 const frameCount = 228;
-const folderName = 'ezgif-6434652fda05ab12-jpg';
+const folderName = '';
 const filePrefix = 'ezgif-frame-';
 const fileExtension = '.jpg';
 const images = [];
@@ -19,7 +19,7 @@ const follower = { x: 0, y: 0 };
 // Helper: Format frame index with leading zeros (e.g., 5 -> "005", 50 -> "050")
 function getFrameFilename(index) {
   const paddedIndex = String(index).padStart(3, '0');
-  return `${folderName}/${filePrefix}${paddedIndex}${fileExtension}`;
+  return `${filePrefix}${paddedIndex}${fileExtension}`;
 }
 
 // DOM Elements
